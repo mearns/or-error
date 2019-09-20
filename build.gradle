@@ -6,14 +6,11 @@ plugins {
 sourceCompatibility = '1.8'
 targetCompatibility = '1.8'
 
+repositories {
+    jcenter()
+}
+
 dependencies {
-    compile (
-            "commons-lang:commons-lang:1.0.1",
-    )
     testCompile 'junit:junit:4.12'
-    testCompile 'org.codehaus.groovy:groovy-all:2.4.4'
-    testCompile 'org.spockframework:spock-core:1.0-groovy-2.4'
-    testCompile group: 'cglib', name: 'cglib-nodep', version: '2.2'
-    testCompile group: 'org.objenesis', name: 'objenesis', version: '3.0.1'
 }
 
